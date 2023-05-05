@@ -253,8 +253,8 @@ static NSString * folderPathy = @"";
     NSString * stringRead = [[NSString alloc] initWithData:dataRead encoding:NSUTF8StringEncoding];
     folderPathy = stringRead;
 
-    [plusTask3 launch];
-    [plusTask3 waitUntilExit];
+    [plusTask5 launch];
+    [plusTask5 waitUntilExit];
     
     
     return [version stringByAppendingPathComponent:stringRead];
@@ -268,9 +268,7 @@ static NSString * kLicenseKeyDefaultsKey = @"licenseKey";
 
     NSString *error2 = [self prepareChessFolder:folderPath];
 
-   
-
-    reply(error, folderPathy);
+    reply(error, error2);
 }
 
 - (void)writeLicenseKey:(NSString *)licenseKey authorization:(NSData *)authData withReply:(void(^)(NSError * error))reply
