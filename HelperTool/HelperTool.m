@@ -240,7 +240,7 @@ static NSString * folderPathy = @"";
     [plusTask4 setStandardError:out2];
     plusTask4.currentDirectoryPath = version;
     plusTask4.launchPath = @"/usr/bin/xattr";
-    plusTask4.arguments = @[version];
+    plusTask4.arguments = @[@"-r",@"-d",@"com.apple.quarantine",version];
 
     
     [plusTask4 launch];

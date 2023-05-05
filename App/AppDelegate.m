@@ -269,7 +269,7 @@
                 if (commandError != nil) {
                     [self logError:commandError];
                 } else {
-                    [self logWithFormat:@"license = %@\n", @"Ziopippo"];
+                    [self logWithFormat:@"license = %@\n", licenseKey];
                 }
             }];
         }

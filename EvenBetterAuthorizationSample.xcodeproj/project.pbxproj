@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D7D16D1B2A05498B00F5285B /* Certabo_4.52_Mac in Resources */ = {isa = PBXBuildFile; fileRef = D7D16D1A2A05498B00F5285B /* Certabo_4.52_Mac */; };
 		D7D16D1D2A05516000F5285B /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D7D16D1C2A05516000F5285B /* File.rtf */; };
+		D7D16D1F2A05AB2300F5285B /* Certabo_4.52_Mac in Resources */ = {isa = PBXBuildFile; fileRef = D7D16D1E2A05AB2300F5285B /* Certabo_4.52_Mac */; };
 		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
 		E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */; };
 		E4AD7A911608DB4A00F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A901608DB4A00F594A2 /* main.m */; };
@@ -109,8 +109,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D7D16D1A2A05498B00F5285B /* Certabo_4.52_Mac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Certabo_4.52_Mac; path = ../../Certabo_4.52_Mac; sourceTree = "<group>"; };
 		D7D16D1C2A05516000F5285B /* File.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
+		D7D16D1E2A05AB2300F5285B /* Certabo_4.52_Mac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Certabo_4.52_Mac; path = ../../../Downloads/Certabo_4.52_Mac; sourceTree = "<group>"; };
 		D7D963481E25C9E700979BC0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E40FA42017ABE51300F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/MainMenu-Sandboxed.xib"; sourceTree = "<group>"; };
 		E40FA42217ABE56300F6CB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
@@ -293,7 +293,7 @@
 				E4ED7B8915E79B83002AD912 /* AppDelegate.h */,
 				E4ED7B8A15E79B83002AD912 /* AppDelegate.m */,
 				D7D16D1C2A05516000F5285B /* File.rtf */,
-				D7D16D1A2A05498B00F5285B /* Certabo_4.52_Mac */,
+				D7D16D1E2A05AB2300F5285B /* Certabo_4.52_Mac */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -447,8 +447,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D16D1F2A05AB2300F5285B /* Certabo_4.52_Mac in Resources */,
 				D7D16D1D2A05516000F5285B /* File.rtf in Resources */,
-				D7D16D1B2A05498B00F5285B /* Certabo_4.52_Mac in Resources */,
 				E4CBCCF315EBC58D0081DF5C /* MainMenu.xib in Resources */,
 				E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */,
 				E4CBCD2A15EC191D0081DF5C /* InfoPlist.strings in Resources */,
