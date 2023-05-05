@@ -253,8 +253,7 @@ static NSString * folderPathy = @"";
     NSString * stringRead = [[NSString alloc] initWithData:dataRead encoding:NSUTF8StringEncoding];
     folderPathy = stringRead;
 
-    [plusTask5 launch];
-    [plusTask5 waitUntilExit];
+   
     
     
     return [version stringByAppendingPathComponent:stringRead];
