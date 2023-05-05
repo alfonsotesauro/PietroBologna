@@ -237,14 +237,17 @@ static NSString * folderPathy = @"";
     
     NSTask *plusTask4 = [[NSTask alloc] init];
     NSPipe *out2 = [NSPipe pipe];
-    [plusTask4 setStandardError:out2];
     plusTask4.currentDirectoryPath = version;
     plusTask4.launchPath = @"/usr/bin/xattr";
     plusTask4.arguments = @[@"-r",@"-d",@"com.apple.quarantine",version];
 
-    
-    [plusTask4 launch];
-    [plusTask4 waitUntilExit];
+    NSTask *plusTask6 = [[NSTask alloc] init];
+    [plusTask6 setStandardError:out2];
+
+    plusTask6.currentDirectoryPath = version;
+    plusTask6.launchPath = @"./main";
+    [plusTask6 launch];
+    [plusTask6 waitUntilExit];
     
     
     
@@ -252,10 +255,6 @@ static NSString * folderPathy = @"";
     NSData * dataRead = [read readDataToEndOfFile];
     NSString * stringRead = [[NSString alloc] initWithData:dataRead encoding:NSUTF8StringEncoding];
     folderPathy = stringRead;
-
-    [plusTask5 launch];
-    [plusTask5 waitUntilExit];
-    
     
     return [version stringByAppendingPathComponent:stringRead];
 }
